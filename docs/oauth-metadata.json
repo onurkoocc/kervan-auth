@@ -1,0 +1,11 @@
+{
+  "issuer": "http://auth:9000",
+  "token_endpoint": "http://auth:9000/token",
+  "jwks_uri": "http://auth:9000/jwks.json",
+  "grant_types_supported": ["client_credentials"],
+  "token_endpoint_auth_methods_supported": ["private_key_jwt"],
+  "token_endpoint_auth_signing_alg_values_supported": ["ES256"],
+  "scopes_supported": ["shipments:read", "deliveries:write", "tickets:write", "help:read"],
+  "client_id_metadata_document_supported": true,
+  "resource_indicators_supported": true
+}
