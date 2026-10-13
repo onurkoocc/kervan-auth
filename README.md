@@ -1,5 +1,8 @@
 # kervan-auth
 
+> Part of **[Kervan](https://github.com/onurkoocc/kervan-system)**, a fictional cargo company built as a
+> reference for backends where AI agents can safely act on a customer's behalf. Start there.
+
 The OAuth 2.1 authorization server of Kervan, the fictional cargo company used
 as Mandate's brownfield reference system. It issues the access tokens that
 `kervan-voice` (the customer agent) presents to `kervan-mcp` (the MCP resource
@@ -14,8 +17,7 @@ What it implements:
   resource, which becomes the token's `aud` (a string).
 - ES256 JWT access tokens (`typ: at+jwt`) and a public JWKS.
 
-The shared contract for all Kervan repositories is `SPEC.md` in the Mandate
-repository (`examples/kervan/SPEC.md`). This service implements §3.1–§3.4 and
+The shared contract for all Kervan repositories is the Kervan `SPEC.md`. This service implements §3.1–§3.4 and
 the logging rules of §6.
 
 ## Endpoints
